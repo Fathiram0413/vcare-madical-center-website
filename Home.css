@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+nav{
+    background: paleturquoise;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black; 
+
+}
+nav li{
+    display: inline-block;
+    margin: 0 9px;   
+}
+
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 8px 20px;
+    transition: 0.4s;
+    padding: 0 8px;
+
+}
+ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav .btn{
+   padding: 5px 10px;
+   background: darkturquoise;
+   color: #ffffff;
+   border: none;
+   cursor: pointer;
+}
+nav .btn:hover{
+    background-color:  #8ab8d9;
+    padding: 5px 10px;
+}
+
+nav a:hover{
+    color: black;
+    background-color: turquoise;
+    padding: 5px 15px;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 65px;
+    height: auto; 
+    margin-right: 10px;
+    border-radius:50%;
+    }
+
+.menu-line{
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    margin-bottom: 3px;   
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:640px){
+    nav{
+        flex-direction: column;
+        height: auto;
+    }
+    nav li{
+        display: block;
+        padding: 10px 0;
+    }
+    ul{
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+    .logo{
+        align-self: flex-start;
+        margin: 10px 0px 0px 30px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+    .showmenu{
+        display: block;
+    }
+    
+}
+            /*footer start*/
+
+.footer {
+    background-color: paleTurquoise;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+                    
+.quick-links h3, .contact-us h3, .follow-us h3 {
+    margin-top: 0;
+}
+                                        
+.quick-links a {
+    color: black;
+    text-decoration: none;
+}
+                    
+.quick-links ul{
+    list-style: none;
+    line-height: 1.5rem;
+    display: inline-block;
+}
+                                        
+.contact-us {
+    color: black;
+}
+                                        
+.follow-us i {
+    width: 40px;
+    height: 40px; 
+    display: inline-block;
+    background-color: white;
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    text-align: center;
+    line-height: 40px;   
+}
+                                        
+                                        
+.follow-us a {
+    color: black;
+    text-decoration: none;  
+} 
+                                        
+.follow-us a :hover{
+    color: white;
+    background-color: black;
+}
+                                        
